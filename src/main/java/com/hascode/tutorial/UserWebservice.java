@@ -14,7 +14,7 @@ import javax.ws.rs.core.Response;
 @Stateless
 @Path("/user")
 @Interceptors(ActionProtocolInterceptor.class)
-@RolesAllowed("admin")
+@RolesAllowed("user")
 public class UserWebservice {
 
 	@DELETE

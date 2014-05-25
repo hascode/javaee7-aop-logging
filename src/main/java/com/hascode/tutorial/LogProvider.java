@@ -8,6 +8,6 @@ import javax.enterprise.inject.spi.InjectionPoint;
 public class LogProvider {
 	@Produces
 	public Logger createLogger(InjectionPoint ip) {
-		return Logger.getLogger(ip.getClass().getName());
+		return Logger.getLogger(ip.getMember().getDeclaringClass().getName());
 	}
 }
