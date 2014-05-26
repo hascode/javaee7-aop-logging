@@ -26,7 +26,7 @@ public class ActionProtocolInterceptor {
 		}
 		sb.append("]");
 		log.log(Level.INFO,
-				"user {0} invoced {1} with method {2} and parameters: {3}",
+				"user {0} invoked {1} with method {2} and parameters: {3}",
 				new Object[] { sessionCtx.getCallerPrincipal().getName(),
 						ic.getTarget().toString(), ic.getMethod().getName(),
 						sb.toString() });
